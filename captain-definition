@@ -1,12 +1,12 @@
 {
- "schemaVersion" :2 ,
- "dockerfileLines": [
-						"FROM [ \"python:2.7.14\", \"node:8.7.0-alpine\" ]",
-						"RUN npm install -g bigcommerce/stencil-cli --loglevel=error",
-						"WORKDIR /bcstencil/efurn",
-						"COPY docker-entrypoint.sh /",
-						"ENTRYPOINT ['/docker-entrypoint.sh']",
-						"ENV NODE_ENV development",
-						"CMD ['start']"
-                    ]
+  "schemaVersion": 2,
+  "dockerfileLines": [
+    "FROM node:8.16.0",
+    "RUN npm install -g bigcommerce/stencil-cli --loglevel=error",
+    "WORKDIR /bcstencil/efurniture",
+    "COPY docker-entrypoint.sh /",
+    "ENTRYPOINT ['/docker-entrypoint.sh']",
+    "ENV NODE_ENV development",
+    "CMD ['start']"
+  ]
 }
