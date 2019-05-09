@@ -1,0 +1,12 @@
+{
+  "normalStoreUrl": "https://www.efurniturehouse.com/",
+  "port": "3000",
+  "clientId": "9b3hksfgwdzo42vchwomt19vzscn410",
+  "accessToken": "bml4azvj2xetg5pd6nplo01sowgzrg",
+  "customLayouts": {
+    "brand": {},
+    "category": {},
+    "page": {},
+    "product": {}
+  }
+}
