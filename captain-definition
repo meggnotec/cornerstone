@@ -1,11 +1,9 @@
 {
   "schemaVersion": 2,
   "dockerfileLines": [
-    "FROM node:8.10.0",
-    "RUN npm install -g bigcommerce/stencil-cli --loglevel=error",
-    "WORKDIR /bcstencil/efurniture",
-    "COPY docker-entrypoint.sh /",
-    "ENTRYPOINT ['/docker-entrypoint.sh']",
-    "CMD ['start']"
+        "FROM node:8.16.0",
+        "RUN npm install && npm cache clean --force",
+        "CMD [ \"stencil start\", \"start\" ]"
   ]
 }
+
